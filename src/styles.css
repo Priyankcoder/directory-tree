@@ -1,3 +1,7 @@
+:root {
+  --blue-background: #1890ff;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;

@@ -8,8 +8,8 @@
   overflow: hidden;
   transform: scale(0.8);
   color: white;
-  background-color: #1890ff;
-  border: 1px solid #1890ff;
+  background-color: var(--blue-background);
+  border: 1px solid var(--blue-background);
   border-radius: 4px;
 }
 
