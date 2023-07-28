@@ -1,3 +1,4 @@
+import cx from "classnames";
 import { IRenderTreeProps } from "../../utils/tree.interface";
 import { TypeIconMap } from "../../utils/helper";
 import Checkbox from "../Checkbox/Checkbox";
@@ -5,10 +6,13 @@ import styles from "./RenderTree.module.css";
 
 const RenderTree = (props: IRenderTreeProps) => {
   const { tree, handleCheckBoxClick } = props;
-  const { name, children = [], id, status, type } = tree;
+  const { name, children = [], id, status, type, parentId } = tree;
 
   return (
-    <div className={styles.treeContainer} key={id}>
+    <div
+      className={cx(styles.treeContainer, { [styles.root]: parentId === null })}
+      key={id}
+    >
       <div className={styles.title} onClick={() => handleCheckBoxClick(tree)}>
         <Checkbox status={status} />
         <span className={styles.typeIcon}>{TypeIconMap[type]}</span>

@@ -84,29 +84,27 @@ export const treeData: TreeNode = {
       ],
     },
     {
-      id: 3,
-      parentId: 12,
-      name: "src",
+      id: 12,
+      parentId: 1,
+      name: "public",
       type: Type.Folder,
       status: Status.Unchecked,
       children: [
         {
-          id: 3,
+          id: 13,
           parentId: 12,
-          name: "public",
-          type: Type.Folder,
+          name: "index.html",
+          type: Type.File,
           status: Status.Unchecked,
-          children: [
-            {
-              id: 3,
-              parentId: 12,
-              name: "index.html",
-              type: Type.File,
-              status: Status.Unchecked,
-            },
-          ],
         },
       ],
+    },
+    {
+      id: 14,
+      parentId: 1,
+      name: ".gitignore",
+      type: Type.File,
+      status: Status.Unchecked,
     },
   ],
 };

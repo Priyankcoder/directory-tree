@@ -4,6 +4,10 @@
   border-left: 1px dotted black;
 }
 
+.root {
+  border: unset;
+}
+
 .title {
   display: flex;
   align-items: center;
